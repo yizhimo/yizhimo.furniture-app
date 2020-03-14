@@ -1,12 +1,16 @@
 <template>
   <div>
-      <h2>首页</h2>
+    <top-bar class="homeTop"><div slot="center">家具购</div></top-bar>
   </div>
 </template>
 
 <script>
-export default {
+import TopBar from 'components/common/topbar/TopBar.vue'
 
+export default {
+  components: {
+    TopBar
+  }
 }
 </script>
 

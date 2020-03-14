@@ -4,9 +4,9 @@
 /* 伪类 :root 获取根元素html */
 :root {
   --color-text: #666;
-  --color-high-text: #ff5777;
+  --color-high-text: #feaa48;
   /* 设置背景色 */
-  --color-tint: #ff8198;
+  /* --color-tint: #ff8198; */
   --color-background: #fff;
   --font-size: 14px;
   --line-height: 1.5;

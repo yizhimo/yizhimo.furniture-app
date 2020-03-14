@@ -16,7 +16,7 @@ export default {
         activeColor: {
             type: String,
             // default: '#1296db',
-            default: '#ff5777',
+            default: '#feaa48',
         }
     },
     methods: {
@@ -51,6 +51,7 @@ export default {
 
     .item-text {
         font-size: 13px;
+        font-weight: 500;
         margin-top: 2px;
         color: #707070;
     }

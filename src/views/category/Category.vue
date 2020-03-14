@@ -1,12 +1,16 @@
 <template>
   <div>
-      <h2>分类</h2>
+    <top-bar class="categoryTop"><div slot="center">分类</div></top-bar>
   </div>
 </template>
 
 <script>
-export default {
+import TopBar from 'components/common/topbar/TopBar.vue'
 
+export default {
+  components: {
+    TopBar
+  }
 }
 </script>
 

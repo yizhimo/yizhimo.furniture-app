@@ -1,12 +1,16 @@
 <template>
   <div>
-      <h2>我的</h2>
+    <top-bar class="profileTop"><div slot="center">个人资料</div></top-bar>
   </div>
 </template>
 
 <script>
-export default {
+import TopBar from 'components/common/topbar/TopBar.vue'
 
+export default {
+  components: {
+    TopBar
+  }
 }
 </script>
 
