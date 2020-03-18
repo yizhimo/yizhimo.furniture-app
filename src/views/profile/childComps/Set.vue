@@ -62,6 +62,6 @@ export default {
         border-bottom: 1px solid rgb(240, 240, 240);
     }
     .setBottom {
-        padding: 0 15px 10px 15px;
+        padding: 0 15px 20px 15px;
     }
 </style>

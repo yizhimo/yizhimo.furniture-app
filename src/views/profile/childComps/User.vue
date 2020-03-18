@@ -3,7 +3,10 @@
     <div class="userTop">
       <div class="userImg"></div>
       <div class="userIn">
-        <span>登录/注册?</span>
+        <div>
+          <span @click="sign">登录/</span>
+          <span @click="register">注册?</span> 
+        </div>
       </div>
     </div>
     <div class="userBottom">
@@ -29,7 +32,14 @@
 
 <script>
 export default {
-
+    methods: {
+        sign() {
+            this.$router.push('/sign')
+        },
+        register() {
+            this.$router.push('/register');
+        }
+    }
 }
 </script>
 
@@ -60,14 +70,15 @@ export default {
         position: relative;
         /* background-color: chartreuse; */
     }
-    .userIn span {
-        font-size: 18px;
-        color: #fff;
+    #user .userIn div {
         position: absolute;
         top: 0;
         bottom: 0;
-        height: 20px;
-        margin: auto 8px;
+        margin: 10% 0;
+    }
+    .userIn span {
+        font-size: 16px;
+        color: #fff;
     }
 
     .userBottom {

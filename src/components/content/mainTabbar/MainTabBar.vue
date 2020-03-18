@@ -12,12 +12,12 @@
         <img slot="item-img-b" src="~assets/img/tabbar/fenlei-a.svg" alt="">
         <div slot="item-text">分类</div>
       </tab-bar-item>
-      <tab-bar-item path="cart">
+      <tab-bar-item path="/cart">
         <img slot="item-img" src="~assets/img/tabbar/gouwuche.svg" alt="">
         <img slot="item-img-b" src="~assets/img/tabbar/gouwuche-a.svg" alt="">
         <div slot="item-text">购物车</div>
       </tab-bar-item>
-      <tab-bar-item path="profile">
+      <tab-bar-item path="/profile">
         <img slot="item-img" src="~assets/img/tabbar/wode.svg" alt="">
         <img slot="item-img-b" src="~assets/img/tabbar/wode-a.svg" alt="">
         <div slot="item-text">我的</div>
@@ -40,5 +40,5 @@
 </script>
 
 <style>
-  
+
 </style>

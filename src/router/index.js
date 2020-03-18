@@ -5,6 +5,8 @@ const Home = ()=> import('../views/home/Home.vue')
 const Category = ()=> import('../views/category/Category.vue')
 const Cart = ()=> import('../views/cart/Cart.vue')
 const Profile = ()=> import('../views/profile/Profile.vue')
+const Sign = ()=> import('../views/profile/childComps/Sign.vue')
+const Register = ()=> import('../views/profile/childComps/Register.vue')
 
 Vue.use(VueRouter)
 
@@ -28,6 +30,14 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/sign',
+    component: Sign
+  },
+  {
+    path: '/register',
+    component: Register
   }
 ]
 

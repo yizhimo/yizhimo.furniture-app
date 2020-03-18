@@ -1,7 +1,7 @@
 <template>
     <div id="top-bar">
         <div class="top-left"><slot name="left"></slot></div>
-        <div class="top-center"><slot name="center">标题</slot></div>
+        <div class="top-center"><slot name="center"></slot></div>
         <div class="top-right"><slot name="right"></slot></div>
     </div>
 </template>

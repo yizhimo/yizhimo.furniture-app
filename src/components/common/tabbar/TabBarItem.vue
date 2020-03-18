@@ -3,8 +3,8 @@
       <!-- <img src="../../assets/img/tabbar/shouye.svg" alt="">
       <div>首页</div> -->
       <!-- 不能写死，动态获取，使用插槽 -->
-      <div class="item-icon" v-if="!isActive"><slot name="item-img"></slot></div>
-      <div class="item-active-icon" v-else><slot name="item-img-b"></slot></div>
+      <div class="item-active-icon" v-if="isActive"><slot name="item-img-b"></slot></div>
+      <div class="item-icon" v-else><slot name="item-img"></slot></div>
       <div class="item-text" :style="activeStyle"><slot name="item-text"></slot></div>
   </div>
 </template>
@@ -15,7 +15,6 @@ export default {
         path: String,
         activeColor: {
             type: String,
-            // default: '#1296db',
             default: '#feaa48',
         }
     },
@@ -26,7 +25,8 @@ export default {
     },
     computed: {
         isActive() {
-            return this.$route.path.indexOf(this.path) !== -1
+            // return this.$route.path.indexOf(this.path) !== -1
+            return this.$route.path === this.path 
         },
         activeStyle() {
             return this.isActive ? {color: this.activeColor} : {}
