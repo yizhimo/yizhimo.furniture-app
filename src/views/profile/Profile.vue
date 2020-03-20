@@ -32,5 +32,6 @@ export default {
   #profile .profileTop {
     background-color: #fff;
     color: #707070;
+    font-size: 14px;
   }
 </style>

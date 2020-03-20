@@ -27,6 +27,7 @@ export default {
         font-size: 14px;
         border-radius: 10px;
         margin: 0 auto 8px;
+        padding: 4px 0 6px 0;
         background-color: #fff;
         display: flex;
     }

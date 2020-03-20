@@ -42,15 +42,15 @@ export default {
     }
 
     .item-icon img,.item-active-icon img {
-        width: 24px;
-        height: 24px;
-        margin-top: 4px;
+        width: 22px;
+        height: 22px;
+        margin-top: 6px;
         /* 清除img标签下的预留 */
         vertical-align: middle;
     }
 
     .item-text {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
         margin-top: 2px;
         color: #707070;

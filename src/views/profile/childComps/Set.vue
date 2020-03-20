@@ -37,7 +37,7 @@ export default {
     #set {
         width: 98%;
         background-color: #fff;
-        margin: 0 auto;
+        margin: 15px auto 0;
         border-radius: 10px;
         font-size: 14px;
     }
@@ -45,14 +45,14 @@ export default {
         display: inline-block;
         vertical-align: bottom;
         margin-left: 6px;
-        width: 8%;
-        height: 8%;
+        width: 7%;
+        height: 7%;
     }
     #set span {
         display: inline-block;
         vertical-align: bottom;
         font-size: 14px;
-        margin-left: 20px;
+        margin-left: 25px;
     }
     .setTop {
         padding: 4px 15px 10px 15px;
