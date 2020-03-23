@@ -16,8 +16,8 @@ export default {
 #top-bar {
     position: relative;
     display: flex;
-    height: 44px;
-    line-height: 44px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     font-size: 17px;
     color: #ffffff;

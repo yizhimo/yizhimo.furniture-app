@@ -25,6 +25,7 @@ export default {
     #center {
         width: 98%;
         font-size: 14px;
+        color: #707070;
         border-radius: 10px;
         margin: 0 auto 8px;
         padding: 4px 0 6px 0;

@@ -40,6 +40,7 @@ export default {
         margin: 15px auto 0;
         border-radius: 10px;
         font-size: 14px;
+        color: #707070;
     }
     #set img {
         display: inline-block;

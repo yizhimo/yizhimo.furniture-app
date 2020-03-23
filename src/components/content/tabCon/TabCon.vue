@@ -27,6 +27,13 @@ export default {
     methods: {
         itemClick(index) {
             this.currentIndex = index;
+            if(index == 0) {
+                this.$router.replace('/category/space')
+            } else if(index == 1) {
+                this.$router.replace('/category/style')
+            } else {
+                this.$router.replace('/category/classify')
+            }
             // this.$emit('tabClick', index)
         }
     }

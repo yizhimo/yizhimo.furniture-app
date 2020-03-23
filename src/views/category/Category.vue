@@ -5,6 +5,8 @@
       <div slot="right"><img src="~assets/img/common/sousuo1.svg" alt=""></div>
     </top-bar>
     <tab-con :titles="titles"/>
+
+    <router-view/>
   </div>
 </template>
 

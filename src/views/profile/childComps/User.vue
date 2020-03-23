@@ -55,11 +55,11 @@ export default {
         padding-bottom: 15px;
     }
     .userImg {
-        width: 70px;
-        height: 70px;
-        background-color:#fff;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(226, 226, 226);
 
-        margin: 10px 0 0 10px;
+        margin: 18px 0 0 10px;
         border: var(--color-high-text) 1px solid;
         border-radius: 50%;
     }
@@ -68,7 +68,6 @@ export default {
         height: 70px;
         margin: 10px 0 0 10px;
         position: relative;
-        /* background-color: chartreuse; */
     }
     #user .userIn div {
         position: absolute;
