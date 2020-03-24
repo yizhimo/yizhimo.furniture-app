@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style>
+  #category {
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+  }
   #category .categoryTop{
     background-color: #fff;
     color: #707070;

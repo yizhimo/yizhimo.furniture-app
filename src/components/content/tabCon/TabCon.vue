@@ -46,10 +46,10 @@ export default {
         text-align: center;
         font-size: 13px;
         height: 40px;
-        line-height: 54px;
+        line-height: 52px;
         text-align: 40px;
-        background-color: #ffffff;
-        border-bottom: 1px solid rgb(240, 240, 240);
+        background-color: rgb(243, 243, 243);
+        border-bottom: 1px solid #dadada;
         z-index: 10;
     }
     .tab-con-item {

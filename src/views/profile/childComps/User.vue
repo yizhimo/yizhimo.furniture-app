@@ -57,7 +57,7 @@ export default {
     .userImg {
         width: 60px;
         height: 60px;
-        background-color: rgb(226, 226, 226);
+        background-color: rgb(230, 230, 230);
 
         margin: 18px 0 0 10px;
         border: var(--color-high-text) 1px solid;
