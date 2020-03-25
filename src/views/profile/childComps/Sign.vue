@@ -44,8 +44,13 @@ export default {
     },
     methods: {
         onSubmit(values) {
-            console.log('submit', values)
-            this.$router.push('/profile')
+            // console.log('submit', values)
+            if(values.用户名 == this.$store.state.name
+            && values.密码 == this.$store.state.psw) {
+                this.$store.state.token = !this.$store.state.token
+                this.$router.push('/profile')
+            }
+            console.log(this.$store.state.name, this.$store.state.psw)
         },
         aRegister() {
             this.$router.push('/register')

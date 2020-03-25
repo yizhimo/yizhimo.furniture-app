@@ -1,11 +1,16 @@
 <template>
   <div id="user">
     <div class="userTop">
-      <div class="userImg"></div>
+      <div class="userImg">
+          <img src="~assets/img/profile/user.svg" alt="">
+      </div>
       <div class="userIn">
-        <div>
+        <div v-if="this.$store.state.token">
           <span @click="sign">登录/</span>
           <span @click="register">注册?</span> 
+        </div>
+        <div v-else>
+          <span>您好,{{this.$store.state.name}}</span> 
         </div>
       </div>
     </div>
@@ -61,7 +66,11 @@ export default {
 
         margin: 18px 0 0 10px;
         border: var(--color-high-text) 1px solid;
+        text-align: center;
         border-radius: 50%;
+    }
+    .userImg img {
+        margin-top: 4px;
     }
     .userIn {
         flex: 1;

@@ -32,6 +32,8 @@
 <script>
 import TopBar from 'components/common/topbar/TopBar.vue'
 
+// import { request } from 'network/axios.js'
+
 export default {
     components: {
         TopBar
@@ -44,8 +46,16 @@ export default {
     },
     methods: {
         onSubmit(values) {
-            console.log('submit', values);
+            // console.log(values);
+            this.$store.commit('register', values)
             this.$router.push('/sign')
+            // request({
+            //     url: '/demo.json',
+            //     method: 'post',
+            //     data: 'values'
+            // }).then(res => {
+            //     console.log(res)
+            // })
         },
         aSign() {
             this.$router.push('/sign')
