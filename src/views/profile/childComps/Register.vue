@@ -45,8 +45,13 @@ export default {
         };
     },
     methods: {
+        // 点击注册
         onSubmit(values) {
             // console.log(values);
+
+            //调用自己封装的toast组件方法
+            this.$toast.show('注册成功,请登录', 2000)
+
             this.$store.commit('register', values)
             this.$router.push('/sign')
             // request({

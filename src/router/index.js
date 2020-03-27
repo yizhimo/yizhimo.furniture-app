@@ -7,6 +7,7 @@ const Category = ()=> import('../views/category/Category.vue')
 const Space = ()=> import('../views/category/childComps/Space.vue')
 const Style = ()=> import('../views/category/childComps/Style.vue')
 const Classify = ()=> import('../views/category/childComps/Classify.vue')
+const NextCategory = ()=> import('../views/nextCategory/nextCategory.vue')
 
 const Cart = ()=> import('../views/cart/Cart.vue')
 
@@ -46,6 +47,10 @@ const routes = [
         component: Classify
       }
     ]
+  },
+  {
+    path: '/nextCategory:value',
+    component: NextCategory
   },
   {
     path: '/cart',

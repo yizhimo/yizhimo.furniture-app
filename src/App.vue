@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
-    <main-tab-bar/>
+    <!-- <keep-alive exclude="nextCategory"> -->
+      <router-view/>
+    <!-- </keep-alive> -->
+    <main-tab-bar v-show="!this.$store.state.isGoHome"/>
   </div>
 </template>
 

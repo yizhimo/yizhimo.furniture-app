@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="cart">
     <top-bar class="cartTop"><div slot="center">我的家具</div></top-bar>
   </div>
 </template>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+  #cart .cartTop {
+    font-size: 14px;
+  }
 </style>

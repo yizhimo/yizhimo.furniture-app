@@ -38,9 +38,11 @@
 <script>
 export default {
     methods: {
+        // 登录
         sign() {
             this.$router.push('/sign')
         },
+        // 注册
         register() {
             this.$router.push('/register');
         }

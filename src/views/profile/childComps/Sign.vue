@@ -43,14 +43,21 @@ export default {
         };
     },
     methods: {
+        // 点击登录进行验证
         onSubmit(values) {
             // console.log('submit', values)
             if(values.用户名 == this.$store.state.name
             && values.密码 == this.$store.state.psw) {
+
+                //调用自己封装的toast组件方法
+                this.$toast.show('登录成功', 1000)
+
                 this.$store.state.token = !this.$store.state.token
                 this.$router.push('/profile')
+            } else {
+                this.$toast.show('账号或密码错误', 2000)
             }
-            console.log(this.$store.state.name, this.$store.state.psw)
+            // console.log(this.$store.state.name, this.$store.state.psw)
         },
         aRegister() {
             this.$router.push('/register')
