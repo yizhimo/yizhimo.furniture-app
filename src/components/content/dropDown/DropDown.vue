@@ -61,6 +61,7 @@ export default {
         change1(value) {
             // console.log(111)
             console.log(this.isValue, value)
+            // 点击跳转不同内容
             if(value == '1a') {
                 this.showGoods = '这是客厅'
             } else if(value == '1b') {
@@ -114,7 +115,7 @@ export default {
 
 <style>
     .van-dropdown-menu {
-        height: 30px;
+        height: 34px;
         font-size: 12px;
         /* padding-right: 20px; */
     }
