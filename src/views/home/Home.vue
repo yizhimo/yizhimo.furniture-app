@@ -5,6 +5,7 @@
       <div slot="center">家具购</div>
     </top-bar>
     <home-banner :banners="banners"></home-banner>
+    <home-commend></home-commend>
   </div>
 </template>
 
@@ -13,6 +14,7 @@
 import Start from './Start.vue'
 import TopBar from 'components/common/topbar/TopBar.vue'
 import HomeBanner from './childComps/HomeBanner.vue'
+import HomeCommend from './childComps/HomeCommend.vue'
 
 // 引入方法
 import {getHomeBanner} from 'network/home.js'
@@ -21,14 +23,15 @@ export default {
   components: {
     Start,
     TopBar,
-    HomeBanner
+    HomeBanner,
+    HomeCommend
   },
   data() {
     return {
       banners: []
     }
   },
-  created () {
+  created() {
     this._getHomeBanner()
   },
   methods: {
