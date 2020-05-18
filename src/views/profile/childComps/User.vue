@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #user {
         width: 98%;
         margin: 8px auto 8px;

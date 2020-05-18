@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #space {
         margin: 10px auto;
         /* height: 70vh; */

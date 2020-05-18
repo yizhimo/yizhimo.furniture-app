@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!-- <keep-alive exclude="nextCategory"> -->
+    <keep-alive exclude=" CateDetail">
       <router-view/>
-    <!-- </keep-alive> -->
+    </keep-alive>
     <main-tab-bar v-show="!this.$store.state.isGoHome"/>
   </div>
 </template>

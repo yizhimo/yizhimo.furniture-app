@@ -4,7 +4,7 @@
     <top-bar class="homeTop" v-show="!this.$store.state.isGoHome">
       <div slot="center">家具购</div>
     </top-bar>
-    <home-banner :banners="banners"></home-banner>
+    <home-banner :banners="banners" @click="inImage"></home-banner>
     <home-commend></home-commend>
   </div>
 </template>
@@ -40,12 +40,16 @@ export default {
         // console.log(res)
         this.banners = res.data.banners
       })
+    },
+    inImage() {
+      // this.$router.push('/detail/'+this.goodsi.iid)
+      this.$router.push('/detail/')
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
   #home .homeTop {
     font-size: 14px;
   }

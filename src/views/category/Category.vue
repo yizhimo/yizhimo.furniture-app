@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #category {
     height: 100vh;
     background-color: rgb(243, 243, 243);

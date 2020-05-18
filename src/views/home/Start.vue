@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #start div {
         position: fixed;
         top: 3%;

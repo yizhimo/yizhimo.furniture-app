@@ -15,6 +15,9 @@ const Profile = ()=> import('../views/profile/Profile.vue')
 const Sign = ()=> import('../views/profile/childComps/Sign.vue')
 const Register = ()=> import('../views/profile/childComps/Register.vue')
 
+const Detail = ()=> import('../views/detail/Detail.vue')
+const CateDetail = ()=> import('../views/cateDetail/CateDetail.vue')
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -67,6 +70,16 @@ const routes = [
   {
     path: '/register',
     component: Register
+  },
+  {
+    // path: '/detail/:iid',
+    path: '/detail',
+    component: Detail
+  },
+  {
+    // path: '/detail/:iid',
+    path: '/cateDetail:id',
+    component: CateDetail
   }
 ]
 

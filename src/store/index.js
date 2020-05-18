@@ -10,7 +10,14 @@ export default new Vuex.Store({
     // 注册,登录
     token: true,
     name: '',
-    psw: ''
+    psw: '',
+    // 购物车
+    itemId: null,
+    goodsId: null,
+    imgUrl: null,
+    goodsNum: null,
+    goodsMoney: 0,
+    goodsName: null
   },
   mutations: {
     // 进入首页
@@ -22,10 +29,23 @@ export default new Vuex.Store({
       console.log(state, values)
       state.name = values.用户名
       state.psw = values.密码
+    },
+
+    addItemId(state, values) {
+      console.log(state, values)
+      state.itemId = values
+    },
+    addGoods(state, values) {
+      console.log(state, values)
+      state.imgUrl = values.imgUrl
+      state.goodsNum = values.goodsNum
+      state.goodsMoney = values.goodsMoney
+      state.goodsName = values.goodsName
     }
   },
-//   actions: {
-//   },
+  // actions: {
+
+  // },
 //   modules: {
 //   }
 })

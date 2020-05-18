@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #center {
         width: 98%;
         font-size: 14px;

@@ -55,13 +55,11 @@ export default {
     created() {
         // 获取路由传过来的参数
         this.isValue = this.$route.params.value
-        // 隐藏tabBar
-        this.$store.state.isGoHome = true
     }
 }
 </script>
 
-<style>
+<style scoped>
     #nextCategory {
         height: 100vh;
         background-color: rgb(240, 240, 240);

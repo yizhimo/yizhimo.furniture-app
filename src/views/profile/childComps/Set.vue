@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     #set {
         width: 98%;
         background-color: #fff;

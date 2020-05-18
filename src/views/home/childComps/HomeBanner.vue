@@ -1,9 +1,8 @@
 <template>
     <div>
-        <swiper>
-            <swiper-item v-for="(item,index) in banners" :key="index">
+        <swiper >
+            <swiper-item v-for="(item,index) in banners" :key="index" @click="inImage">
                 <img :src="item.img" alt="" class="bannerImg">
-                <div>{{item.name}}</div>
             </swiper-item>
         </swiper>
     </div>
@@ -25,6 +24,12 @@ export default {
                 return []
             }
         }
+    },
+    methods: {
+        inImage() {
+            // this.$router.push('/detail/'+this.goodsi.iid)
+            this.$router.push('/detail/')
+        }
     }
 }
 </script>
@@ -32,6 +37,6 @@ export default {
 <style scoped>
     .bannerImg {
         width: 100%;
-        height: 220px;
+        height: 180px;
     }
 </style>
